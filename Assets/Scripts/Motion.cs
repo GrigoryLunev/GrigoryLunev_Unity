@@ -6,7 +6,7 @@ public class Motion : MonoBehaviour
 {
     public GameObject palyerCamera;
     private CharacterController controller;
-    private float speed = 0.1f;
+    private float speed = 0.2f;
     private float angularSpeed = 1f;
     private float rx=0f,ry;
     // Start is called before the first frame update
@@ -35,7 +35,7 @@ public class Motion : MonoBehaviour
         dx = Input.GetAxis("Horizontal")*speed;
         dz = Input.GetAxis("Vertical")*speed;
 
-        Vector3 motion = new Vector3(dx, 0, dz);
+        Vector3 motion = new Vector3(dx, -1, dz);
 
         motion = transform.TransformDirection(motion); // now in Global coordinates
         controller.Move(motion);

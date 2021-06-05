@@ -52,11 +52,15 @@
     <UnityVersion>2020.1.4f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\test.cs" />
     <Compile Include="Assets\Scripts\sliding_door.cs" />
+    <Compile Include="Assets\Scripts\inside_door_2.cs" />
     <Compile Include="Assets\Scripts\door_rotation.cs" />
+    <Compile Include="Assets\Scripts\ClaireMove.cs" />
     <Compile Include="Assets\Scripts\Motion.cs" />
     <Compile Include="Assets\Scripts\inside_door_rotation.cs" />
-    <Compile Include="Assets\Scripts\inside_door_2.cs" />
+    <Compile Include="Assets\Scripts\remyMove.cs" />
+    <Compile Include="Assets\Scripts\pearlMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
